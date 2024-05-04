@@ -1,0 +1,8 @@
+model: "vit-tiny"
+seed: 3407
+epoch: 20
+batch_size: 64
+optimizer: "AdamW"
+scheduler: "ExponentialLR"
+start_lr: 1e-4
+end_lr: 1e-6
