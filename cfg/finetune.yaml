@@ -1,8 +1,11 @@
-model: "vit-tiny"
+model: "vit-tiny-relu"
 seed: 3407
 epoch: 20
 batch_size: 64
+num_workers: 16
 optimizer: "AdamW"
-scheduler: "ExponentialLR"
-start_lr: 1e-4
-end_lr: 1e-6
+scheduler: LinearLR
+aux_loss_weight: 0
+start_lr: 0.0001
+end_lr: 1.0e-05
+resume_dir: "/home/shucheng/workspaces/MoE-rram/outputs/2024-05-03-22-47-19"

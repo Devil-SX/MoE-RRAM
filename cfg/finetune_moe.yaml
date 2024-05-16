@@ -1,0 +1,14 @@
+model: vit-moe-tiny-relu
+seed: 3407
+epoch: 40
+batch_size: 256
+num_workers: 16
+optimizer: AdamW
+scheduler: ExponentialLR
+start_lr: 5.0e-05
+end_lr: 5.0e-07
+T_0: 4
+T_mult: 2
+min_lr: 5.0e-06
+aux_loss_weight: 0.1
+resume_dir: /home/shucheng/workspaces/MoE-rram/outputs/2024-05-08-19-34-48

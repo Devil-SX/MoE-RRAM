@@ -74,7 +74,7 @@ if __name__ == "__main__":
     model = get_model(cfg)
     state_dict = torch.load(checkpoint_dir / "checkpoint.pt")
     # for name, value in state_dict.items():
-    # print(name)
+    #     print(name)
     model.load_state_dict(state_dict)
 
     _, cifar100_test = get_dataset(cfg)
